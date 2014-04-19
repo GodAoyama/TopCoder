@@ -12,11 +12,9 @@ public class YahtzeeScore
             {
                 if(v2 == v1)
                     tmpPoints += v2;
-            }
-        
+            }        
             maxValue = Math.Max(maxValue,tmpPoints);        
-        }
-    
+        }    
         return maxValue;
     }
 }
