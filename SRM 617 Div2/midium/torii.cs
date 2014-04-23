@@ -17,6 +17,7 @@ public class SlimeXSlimonadeTycoon
                 {
                     morning[i-j] -= customers[i];
                     sold += customers[i];
+                    customers[i] = 0;
                 }
                 else
                 {
