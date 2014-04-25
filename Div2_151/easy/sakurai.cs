@@ -12,7 +12,7 @@ public class PrefixCode
     {
         string s1, s2;
         int x=0;
-        int idx=765;//tell me how to set big number!
+        int idx=int.MaxValue;
         for (int i = 0; i < words.Length; i++)
         {
             s1=words[i];
