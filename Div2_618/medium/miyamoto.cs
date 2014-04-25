@@ -27,8 +27,8 @@ class LongWordsDiv2
                 //System.Console.WriteLine("i = " + i + " j = " + j);
                 if (word[i] == word[j])
                 {
-                    a = word.Substring(i + 1, j - i);
-                    b = word.Substring(j + 1, word.Length - j + 1);
+                    a = word.Substring(i + 1, j - i - 1);
+                    b = word.Substring(j + 1);
 
                 }
 
