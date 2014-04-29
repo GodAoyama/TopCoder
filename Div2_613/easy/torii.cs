@@ -6,7 +6,6 @@ public class TaroString
 {
     public string getAnswer(string S)
     {
-        bool[] table = new bool[256];
         string answer = string.Empty;
 
         foreach(char v in S)
