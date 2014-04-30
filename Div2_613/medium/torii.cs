@@ -13,13 +13,10 @@ public class TaroFriends
 
         for (int i = 0; i < coordinates.Length; i++)
         {
-            for (int j = i; j < coordinates.Length; j++)
-            {
-                for (int k = 0; k < coordinates.Length; k++)
-                    moved[k] = k <= j ? coordinates[k]+X : coordinates[k]-X;
+            for (int k = 0; k < coordinates.Length; k++)
+                moved[k] = k <= i ? coordinates[k]+X : coordinates[k]-X;
 
-                distance = Math.Min(distance, moved.Max() - moved.Min());
-            }
+            distance = Math.Min(distance, moved.Max() - moved.Min());
         }
 
         return distance;
